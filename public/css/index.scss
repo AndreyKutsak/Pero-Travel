@@ -1,0 +1,191 @@
+@import "varibles.scss";
+.main-wraper {
+	position: relative;
+	padding: 25px 0 248px;
+	background-size: cover;
+	background-position: center center;
+	background-image: url(../img/headrer-bg.jpg);
+	width: 100%;
+
+	header {
+		margin-bottom: 155px;
+	}
+	.text-wraper {
+		.main-title {
+			margin-bottom: 60px;
+			.wt-bg {
+				font-family: $montserat;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 72px;
+				line-height: 88px;
+				color: $white;
+			}
+			.stroked-title {
+				position: relative;
+				font-family: $montserat;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 96px;
+				line-height: 117px;
+				-webkit-text-stroke: 2px $white;
+				color: transparent;
+				&:after {
+					position: absolute;
+					content: "";
+					top: -19%;
+					right: 13%;
+					height: 65px;
+					width: 150px;
+					background-image: url(../img/together-yellow.svg);
+					background-position: center center;
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
+	.social-wraper {
+		li {
+			padding: 4px 0;
+			transition: 0.4s;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	.video-slider {
+		position: absolute;
+		right: -630px;
+		bottom: -15%;
+		.video-wraper {
+			position: relative;
+			height: 227px;
+			width: 360px;
+			margin: 0 10px;
+			border-radius: 10px;
+			overflow: hidden;
+			cursor: pointer;
+			transition: 0.4s;
+			&:hover {
+				transform: scale(1.05);
+				&::before {
+					opacity: 1;
+				}
+			}
+			&:before {
+				position: absolute;
+				content: "";
+				top: 50%;
+				left: 50%;
+				height: 74px;
+				width: 74px;
+				transform: translate(-50%, -50%);
+				background: url(../img/play-btn.svg);
+				background-position: center center;
+				background-size: contain;
+				opacity: 0;
+				z-index: 5;
+				transition: 0.4s;
+			}
+			&:after {
+				position: absolute;
+				content: " ";
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background: $videoGradient;
+			}
+			&:first-child {
+				&:before {
+					opacity: 1;
+				}
+			}
+			video {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+}
+.popular {
+	padding: 263px 0 150px;
+	.popular-head {
+		margin-bottom: 90px;
+	}
+	.rel-container {
+		position: relative;
+	}
+	.popular-slider {
+		position: sticky;
+		top: 0;
+		left: 0;
+
+		.slide {
+			position: relative;
+			border-radius: 10px;
+			padding: 211px 16px 42px;
+			min-width: 360px;
+			background-size: cover;
+			background-position: center center;
+			overflow: hidden;
+			margin: 0 10px;
+			z-index: 0;
+			transition: 0.4s;
+			&:after {
+				position: absolute;
+				content: "";
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				z-index: -1;
+				opacity: 1;
+				transition: 0.4s;
+				background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+			}
+			&:hover {
+				transform: scale(1.05);
+				&::after {
+					opacity: 0.5;
+				}
+			}
+			.tour-type {
+				font-family: $montserat;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				color: $white;
+				margin-bottom: 2px;
+			}
+			.tour-title {
+				font-family: $montserat;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 17px;
+				color: $yellow;
+				margin-bottom: 10px;
+			}
+			.data-wraper {
+				.duration,
+				.coast {
+					font-family: $montserat;
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 15px;
+					color: $white;
+					margin-bottom: 20px;
+				}
+			}
+			.tour-desc {
+				font-family: $montserat;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				color: $white;
+				margin-bottom: 35px;
+			}
+		}
+	}
+}
