@@ -313,16 +313,7 @@ root.render(
 						Смотреть все
 					</a>
 				</div>
-				<div className="rewords-slider d-flex">
-					{if(rwwords){
-						rewords.map(function(data){
-
-						})
-					}
-					else{
-						return(<p className="section-err-desc">Поканет Отзывов</p>)ж
-					}}
-				</div>
+				<div className='rewords-slider d-flex'></div>
 			</div>
 		</section>
 	</main>
