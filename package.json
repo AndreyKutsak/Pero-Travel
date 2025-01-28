@@ -1,0 +1,19 @@
+{
+  "name": "perotravel",
+  "version": "1.0.0",
+  "description": "tour agency website",
+  "main": "app.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyKutsak/Pero-Travel.git"
+  },
+  "author": "Andrey Kutsak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyKutsak/Pero-Travel/issues"
+  },
+  "homepage": "https://github.com/AndreyKutsak/Pero-Travel#readme"
+}
